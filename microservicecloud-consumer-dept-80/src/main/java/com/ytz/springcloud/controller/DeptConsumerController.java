@@ -19,7 +19,8 @@ import java.util.List;
 @RestController
 public class DeptConsumerController {
 
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "MICROSERVICECLOUD-DEPT";//提供方服务名称
 
     @Autowired
     private RestTemplate restTemplate;
