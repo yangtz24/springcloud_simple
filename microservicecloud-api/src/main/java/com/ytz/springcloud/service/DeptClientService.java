@@ -12,9 +12,10 @@ import java.util.List;
  * @InterfaceName: DeptClientService
  * @Description: TODO
  * @Author: Administrator
- * @Date: 服务暴露接口   18:12
+ * @Date: 服务暴露接口
  * @Version: 1.0
  **/
+//@Service
 @FeignClient(value = "MICROSERVICECLOUD-DEPT")  //服务名称
 public interface DeptClientService {
 
