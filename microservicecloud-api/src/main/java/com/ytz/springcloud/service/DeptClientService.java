@@ -16,7 +16,8 @@ import java.util.List;
  * @Version: 1.0
  **/
 //@Service
-@FeignClient(value = "MICROSERVICECLOUD-DEPT")  //服务名称
+//@FeignClient(value = "MICROSERVICECLOUD-DEPT")  //服务名称
+@FeignClient(value = "MICROSERVICECLOUD-DEPT", fallbackFactory = DeptClientServiceFallbackFactory.class)  //服务名称  服务降级
 public interface DeptClientService {
 
     @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
