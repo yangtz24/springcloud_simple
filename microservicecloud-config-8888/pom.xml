@@ -9,37 +9,37 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-zuul-gateway-9527</artifactId>
+    <artifactId>microservicecloud-config-8888</artifactId>
 
     <dependencies>
-        <!-- zuul路由网关 -->
+        <!-- springCloud Config -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zuul</artifactId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-        <!-- actuator监控 -->
+        <!-- 避免Config的Git插件报错：org/eclipse/jgit/api/TransportConfigCallback -->
+       <!-- <dependency>
+            <groupId>org.eclipse.jgit</groupId>
+            <artifactId>org.eclipse.jgit</artifactId>
+            <version>4.10.0.201712302008-r</version>
+        </dependency>-->
+        <!-- 图形化监控 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-        <!-- hystrix容错 -->
+        <!-- 熔断 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-starter-eureka</artifactId>
         </dependency>
-        <!-- 日常标配 -->
         <dependency>
-            <groupId>com.ytz.springcloud</groupId>
-            <artifactId>microservicecloud-api</artifactId>
-            <version>${project.version}</version>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,5 +64,7 @@
             <version>1.5.9.RELEASE</version>
         </dependency>
     </dependencies>
+
+
 
 </project>

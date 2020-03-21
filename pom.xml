@@ -22,6 +22,10 @@
     <module>microservicecloud-provider-dept-hystrix-8001</module>
     <module>microservicecloud-consumer-hystrix-dashboard</module>
     <module>microservicecloud-zuul-gateway-9527</module>
+    <module>microservicecloud-config-8888</module>
+    <module>microservicecloud-config-client-8899</module>
+    <module>microservicecloud-config-dept-client-8001</module>
+    <module>microservicecloud-config-eureka-client-7001</module>
   </modules>
   <name>Maven</name>
 
